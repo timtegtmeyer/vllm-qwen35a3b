@@ -11,7 +11,7 @@ if [ -z "$HF_TOKEN" ]; then
     exit 1
 fi
 
-huggingface-cli login --token "$HF_TOKEN" --add-to-git-credential false
+huggingface-cli login --token "$HF_TOKEN"
 
 echo "Downloading $MODEL_ID to $MODEL_DIR ..."
 mkdir -p "$MODEL_DIR"
